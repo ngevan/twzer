@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2017-10-24
+### Added
+- Create module to expand a url with Bitly.
+### Changed
+- Update `bitly.test.js` to test for expand function.
+- Update `tweezer.js` to have expand command.
+- Update `bitly.js` with expand function.
+
 ## [0.3.0] - 2017-10-24
 ### Added
 - Test for Bitly's API.
