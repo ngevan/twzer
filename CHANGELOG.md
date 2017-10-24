@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2017-10-24
+### Added
+- Test for Google's API.
+- Add shorten function to Google client.
+- Add expand function to Google client.
+### Changed
+- Update `shorten.js` to use Google API.
+- Update `expand.js` to use Google API.
+
 ## [0.4.0] - 2017-10-24
 ### Added
 - Create module to expand a url with Bitly.
@@ -18,7 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Create module to shorten a url with Bitly.
 ### Changed
 - Update `tweezer.js` to have shorten command.
-- Update `shorten.js` to use Bitly api.
+- Update `shorten.js` to use Bitly API.
 
 ## [0.3.0] - 2017-10-24
 ### Added
