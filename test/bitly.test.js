@@ -68,6 +68,30 @@ describe('Bitly client', function() {
     expect(response.data.url).to.equal('http://bit.ly/2hEY3bj');
   });
 
+  it('should fetch the expanded link', function() {
+    let link, response;
+
+    link = 'www.example.com';
+    sandbox.stub(bitly, 'expand').withArgs(link).returns({
+      "status_code": 200,
+      "status_txt": "OK",
+      "data": {
+        "expand": [
+          {
+            "short_url": "http://bit.ly/2hEY3bj",
+            "long_url": "http://example.com/",
+            "user_hash": "2hEY3bj",
+            "global_hash": "VDcn"
+          }
+        ]
+      }
+    });
+
+    response = bitly.expand(link);
+
+    expect(response.data.expand[0].long_url).to.equal('http://example.com/');
+  });
+
   it('should return status code 500 for invalid request', function() {
     let invalidLink, response;
 
