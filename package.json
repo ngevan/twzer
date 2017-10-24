@@ -1,0 +1,15 @@
+{
+  "name": "tweezer",
+  "version": "0.1.0",
+  "description": "A URL shortening and expanding cli tool",
+  "main": "index.js",
+  "repository": "https://github.com/evanscloud/tweezer",
+  "author": "Evan Ng <contact@evanng.com>",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "url",
+    "shortener",
+    "expander"
+  ]
+}
