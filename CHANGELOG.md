@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.3.0] - 2017-10-24
 ### Added
+- Test for Bitly's API.
+- Create module to shorten a url with Bitly.
+### Changed
+- Update `tweezer.js` to have shorten command.
+- Update `shorten.js` to use Bitly api.
+
+## [0.3.0] - 2017-10-24
+### Added
 - Test for shortening url functionality (Bitly as a placeholder).
 - Create shorten command in `commands/shorten.js`.
 
