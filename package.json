@@ -11,5 +11,13 @@
     "url",
     "shortener",
     "expander"
-  ]
+  ],
+  "scripts": {
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.1"
+  }
 }
