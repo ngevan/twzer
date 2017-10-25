@@ -10,7 +10,7 @@ describe('Expand command', function () {
 
   program
     .description('URL expander and expander tool (Bitly set as default).')
-    .usage('tweezer <command> [option] <argument>');
+    .usage('twzer <command> [option] <argument>');
 
 	beforeEach(function () {
     sandbox = sinon.createSandbox();
@@ -24,7 +24,7 @@ describe('Expand command', function () {
     let commands, argv, response;
 
     commands = ['ex', 'expand'];
-    argv = ['node', './lib/tweezer', 'expand', 'example.com'];
+    argv = ['node', './lib/twzer', 'expand', 'example.com'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function validateCommand(argv) {
       if (commands.includes(argv.slice(2)[0])) {
@@ -42,7 +42,7 @@ describe('Expand command', function () {
     let commands, argv, response;
 
     commands = ['ex', 'expand'];
-    argv = ['node', './lib/tweezer', 'ex', 'example.com'];
+    argv = ['node', './lib/twzer', 'ex', 'example.com'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function validateCommand(argv) {
       if (commands.includes(argv.slice(2)[0])) {
@@ -60,7 +60,7 @@ describe('Expand command', function () {
     let argv, commands, response;
 
     commands = ['ex', 'expand'];
-    argv = ['node', './lib/tweezer', 'expanderrr', 'example.com'];
+    argv = ['node', './lib/twzer', 'expanderrr', 'example.com'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function validateCommand(argv) {
       function validateCommand(input) {
@@ -81,7 +81,7 @@ describe('Expand command', function () {
   it('should display error message if no link is given', function() {
     let argv, response;
 
-    argv = ['node', './lib/tweezer', 'expand'];
+    argv = ['node', './lib/twzer', 'expand'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function missingArgument(argv) {
       if (argv.slice(3)[0] === undefined) {

@@ -10,7 +10,7 @@ describe('Shorten command', function () {
 
   program
     .description('URL shortener and expander tool (Bitly set as default).')
-    .usage('tweezer <command> [option] <argument>');
+    .usage('twzer <command> [option] <argument>');
 
 	beforeEach(function () {
     sandbox = sinon.createSandbox();
@@ -24,7 +24,7 @@ describe('Shorten command', function () {
     let commands, argv, response;
 
     commands = ['sh', 'shorten'];
-    argv = ['node', './lib/tweezer', 'shorten', 'example.com'];
+    argv = ['node', './lib/twzer', 'shorten', 'example.com'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function validateCommand(argv) {
       if (commands.includes(argv.slice(2)[0])) {
@@ -42,7 +42,7 @@ describe('Shorten command', function () {
     let commands, argv, response;
 
     commands = ['sh', 'shorten'];
-    argv = ['node', './lib/tweezer', 'sh', 'example.com'];
+    argv = ['node', './lib/twzer', 'sh', 'example.com'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function validateCommand(argv) {
       if (commands.includes(argv.slice(2)[0])) {
@@ -60,7 +60,7 @@ describe('Shorten command', function () {
     let argv, commands, response;
 
     commands = ['sh', 'shorten'];
-    argv = ['node', './lib/tweezer', 'shortyyy', 'example.com'];
+    argv = ['node', './lib/twzer', 'shortyyy', 'example.com'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function validateCommand(argv) {
       function validateCommand(input) {
@@ -81,7 +81,7 @@ describe('Shorten command', function () {
   it('should display error message if no link is given', function() {
     let argv, response;
 
-    argv = ['node', './lib/tweezer', 'shorten'];
+    argv = ['node', './lib/twzer', 'shorten'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function missingArgument(argv) {
       if (argv.slice(3)[0] === undefined) {

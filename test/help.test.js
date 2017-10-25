@@ -10,7 +10,7 @@ describe('Help command', function() {
 
   program
     .description('URL expander and expander tool (Bitly set as default).')
-    .usage('tweezer <command> [option] <argument>')
+    .usage('twzer <command> [option] <argument>')
     .version(packageJson.version);
 
 	beforeEach(function () {
@@ -24,7 +24,7 @@ describe('Help command', function() {
   it('should return help when called without arguments', function() {
     let argv;
 
-    argv = ['node', './lib/tweezer'];
+    argv = ['node', './lib/twzer'];
 
     sandbox.stub(program, 'help');
 
@@ -38,7 +38,7 @@ describe('Help command', function() {
   it('should return help when called with \'--help\'', function() {
     let argv, response;
 
-    argv = ['node', './lib/tweezer', '--help'];
+    argv = ['node', './lib/twzer', '--help'];
 
     sandbox.stub(program, 'parse').withArgs(argv).callsFake(function help() {
       if (argv.includes('--help')) { return true };
@@ -52,7 +52,7 @@ describe('Help command', function() {
   it('should return the current version when called with \'--version\'', function() {
     let argv, response;
 
-    argv = ['node', './lib/tweezer', '--version'];
+    argv = ['node', './lib/twzer', '--version'];
 
     sandbox.stub(program, 'parse').withArgs(argv).returns(packageJson.version)
 
