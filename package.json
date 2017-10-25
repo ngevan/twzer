@@ -1,9 +1,9 @@
 {
-  "name": "tweezer",
-  "version": "0.1.0",
+  "name": "twzer",
+  "version": "1.0.0",
   "description": "A URL shortening and expanding cli tool",
   "main": "index.js",
-  "repository": "https://github.com/evanscloud/tweezer",
+  "repository": "https://github.com/evanscloud/twzer",
   "author": "Evan Ng <contact@evanng.com>",
   "license": "MIT",
   "keywords": [
@@ -12,6 +12,10 @@
     "shortener",
     "expander"
   ],
+  "preferGlobal": true,
+  "bin": {
+    "twzer": "lib/index.js"
+  },
   "scripts": {
     "test": "mocha"
   },

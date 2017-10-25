@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2017-10-24
+### Changed
+- Renamed `tweezer -> twzer` throughout (name taken already on npmjs.com).
+- Update README with more than one word.
+
 ## [0.5.0] - 2017-10-24
 ### Added
 - Test for Google's API.
@@ -18,7 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Create module to expand a url with Bitly.
 ### Changed
 - Update `bitly.test.js` to test for expand function.
-- Update `tweezer.js` to have expand command.
+- Update `twzer.js` to have expand command.
 - Update `bitly.js` with expand function.
 
 ## [0.3.0] - 2017-10-24
@@ -26,7 +31,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Test for Bitly's API.
 - Create module to shorten a url with Bitly.
 ### Changed
-- Update `tweezer.js` to have shorten command.
+- Update `twzer.js` to have shorten command.
 - Update `shorten.js` to use Bitly API.
 
 ## [0.3.0] - 2017-10-24
@@ -38,7 +43,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Use [Commander.js](https://github.com/tj/commander.js/) for command-line interface.
 - Test for basic cli functionality.
-- Create cli in `lib/tweezer.js`.
+- Create cli in `lib/twzer.js`.
 
 ## [0.1.0] - 2017-10-24
 - Create initial project structure.
