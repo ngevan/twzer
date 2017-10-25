@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2017-10-24
+### Changed
+- Set Bitly as default client if neither is entered as argument.
+
 ## [1.0.2] - 2017-10-24
 ### Changed
 - `validateCommand` ensures that the command entered is valid. Will throw an error if it isn't.
