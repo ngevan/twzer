@@ -1,6 +1,6 @@
 {
   "name": "twzer",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A URL shortening and expanding cli tool",
   "main": "index.js",
   "repository": "https://github.com/evanscloud/twzer",
@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "bitly": "^4.1.1",
+    "chalk": "^2.3.0",
+    "cli-table": "^0.3.1",
     "commander": "^2.11.0",
     "googleapis": "^22.2.0"
   }
