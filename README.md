@@ -3,7 +3,7 @@
 [![Travis CI](https://img.shields.io/travis/evanscloud/twzer.svg)](https://travis-ci.org/evanscloud/twzer)
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
-Looking to shorten a URL like [iamtheproudownerofthelongestlongestlongestdomainnameinthisworld.com](iamtheproudownerofthelongestlongestlongestdomainnameinthisworld.com)? Or see what's behind a mysterious [http://bit.ly/2zMSEXP](http://bit.ly/2zMSEXP)? Look no further! Twzer is a URL shortening and expanding tool accessible right from the command-line.
+Looking to shorten a URL like [iamtheproudownerofthelongestlongestlongestdomainnameinthisworld.com](http://www.iamtheproudownerofthelongestlongestlongestdomainnameinthisworld.com)? Or see what's behind a mysterious [http://bit.ly/2zMSEXP](http://bit.ly/2zMSEXP)? Look no further! Twzer is a URL shortening and expanding tool accessible right from the command-line.
 
 ## Installation
 
@@ -63,7 +63,7 @@ Twzer is pronounced as 'twiz-er'. Like Twizzler, but without the 'L'.
 
 ### Why the funky name?
 
-This project was originally called twzer, but an npm package already existed with that name. I tried :sweat_smile:.
+This project was originally called tweezer, but an npm package already existed with that name. I tried :sweat_smile:.
 
 ## Contributing
 
@@ -71,4 +71,4 @@ Suggestions, bug reports and pull requests are encouraged for those who would li
 
 ## License
 
-Project licensed under the MIT license - see [LICENSE](https://github.com/evanscloud/twzer/blob/master/LICENSE) for details.
+MIT license - see [LICENSE](https://github.com/evanscloud/twzer/blob/master/LICENSE) for details.
